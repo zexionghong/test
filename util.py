@@ -74,7 +74,7 @@ def get_random_useragent():
 
 
 def wait_some_time():
-    time.sleep(random.randint(100, 300) / 1000)
+    time.sleep(random.randint(50, 150) / 1000)
 
 
 def send_wechat(message):
@@ -114,3 +114,5 @@ def save_image(resp, image_file):
     with open(image_file, 'wb') as f:
         for chunk in resp.iter_content(chunk_size=1024):
             f.write(chunk)
+if __name__ == '__main__':
+    print(random.randint(50, 150) / 1000)
