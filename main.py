@@ -15,17 +15,18 @@ if __name__ == '__main__':
     `Y888P                                                                                                                                                  
                                                
 功能列表：                                                                                
- 1.预约商品
+ 1.预约商品cv
  2.秒杀抢购商品
     """
     print(a)
 
     jd_seckill = JdSeckill()
+    jd_seckill.seckill_num = 2
     choice_function = input('请选择:')
     if choice_function == '1':
         jd_seckill.reserve()
     elif choice_function == '2':
-        jd_seckill.seckill_by_proc_pool()
+        jd_seckill.seckill_by_proc_pool(9)
     else:
         print('没有此功能')
         sys.exit(1)
